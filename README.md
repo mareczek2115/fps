@@ -1,0 +1,1 @@
+The simple 3D first-person shooter made with three.js library bundled by Webpack and handled by Kotlin server
