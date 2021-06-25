@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/icon.png" />
+    <title>siemanko</title>
+  <link rel="icon" href="icon.png?82384ea3444ae0294a63"><script defer src="./game.js?82384ea3444ae0294a63"></script></head>
+  <body>
+    <div id="root">
+      <div id="gui">
+        <div class="options">
+          <input
+            class="range-input"
+            type="range"
+            id="camera-height"
+            value="45"
+            min="5"
+            max="85"
+          />
+          <label for="">wysokość kamery nad ziemią</label>
+          <input
+            class="range-input"
+            type="range"
+            id="camera-x-rotation"
+            value="0"
+            min="-90"
+            max="90"
+          />
+          <label for="">kąt nachylenia kamery x</label>
+          <input
+            class="range-input"
+            type="range"
+            id="camera-distance"
+            value="85"
+            min="30"
+            max="150"
+          />
+          <label for="">odległość kamery od postaci</label>
+          <input
+            class="range-input"
+            type="range"
+            id="fov"
+            value="70"
+            min="30"
+            max="120"
+          />
+          <label for="">fov kamery</label>
+        </div>
+        <div class="options">
+          <input
+            class="range-input"
+            type="range"
+            id="light-intensity"
+            value="1.5"
+            min="0.5"
+            max="4"
+            step="0.5"
+          />
+          <label for="">moc świateł</label>
+          <input
+            class="range-input"
+            type="range"
+            id="fire-size"
+            value="16"
+            min="10"
+            max="22"
+          />
+          <label for="">wielkość ognia</label>
+          <input
+            class="range-input"
+            type="range"
+            id="fire-size-x"
+            value="4.1"
+            min="1.1"
+            max="7.1"
+            step="0.2"
+          />
+          <label for="">szer. ogniska x</label>
+          <input
+            class="range-input"
+            type="range"
+            id="fire-size-z"
+            value="4.1"
+            min="1.1"
+            max="7.1"
+            step="0.2"
+          />
+          <label for="">szer. ogniska z</label>
+        </div>
+        <div class="options">
+          <input type="checkbox" id="shadows" checked />
+          <label for="">cienie</label>
+          <input class="range-input" type="range" id="laser-spread" />
+          <label for="">rozrzut lasera</label>
+          <input class="range-input" type="range" id="laser-scale" />
+          <label for="">skala lasera</label>
+        </div>
+      </div>
+      <div id="score-wrapper">
+        <div id="score">Wynik: 0</div>
+        <button id="save-score">Zapisz wynik</button>
+      </div>
+    </div>
+  </body>
+</html>
